@@ -23,7 +23,7 @@ const Contact =()=>{
     const handelsubmit = async (e) =>{
         e.preventDefault();
         try{
-            const response = await axios.post('http://localhost:5000/contacts/contactUS',formData);
+            const response = await axios.post('https://weblearning.onrender.com/contacts/contactUS',formData);
             alert("message send successfully!");
             setFormData({
                 fullName: '',
