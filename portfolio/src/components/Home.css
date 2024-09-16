@@ -1,0 +1,106 @@
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px; /* Increased padding for better overall layout */
+    max-width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #000, #333);
+    color: white;
+    height: 80vh; /* Full screen height */
+}
+
+.home-text {
+    flex: 1;
+    padding-right: 50px; /* Adjust for better text-image spacing */
+    max-width: 50%;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: -50px; /* Remove margin to reduce gap */
+    color: #CCCCCC; /* Lighter color like the example */
+}
+
+.home-text h1 {
+    font-size: 4.5rem; /* Increase font size for impact */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #CCCCCC; /* Match description color from image */
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* To match button style from image */
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45%; /* Adjust image width */
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0; /* No border radius for professional look */
+    object-fit: cover;
+    /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow around image */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+        
+    }
+
+    .home-text {
+        padding-right: 0;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .home-image {
+        max-width: 80%; /* Adjust image width for smaller screens */
+    }
+    .home-text h2 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+        margin-bottom: -20px;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem; /* Reduce font size for mobile */
+    }
+
+    .home-text p {
+        font-size: 1rem; /* Adjust paragraph font size for mobile */
+        margin-bottom: 20px;
+    }
+
+    .home-image img {
+        max-height: 300px; /* Limit image height on mobile */
+    }
+}
