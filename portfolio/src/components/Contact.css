@@ -62,6 +62,10 @@ form-group textarea{
     border-radius: 0;
     object-fit: cover;
   }
+  .info{
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
   @media (max-width: 768px) {
     .contact-section {
       flex-direction: column;

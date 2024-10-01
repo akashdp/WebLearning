@@ -71,6 +71,7 @@ const Contact =()=>{
                 </div>
 
                 <button type="submit" className="submit-button">send Message</button>
+                <p className="info">Please wait for 10 seconds. </p>
             </form>
         </div>
         <div className="contact-image">
